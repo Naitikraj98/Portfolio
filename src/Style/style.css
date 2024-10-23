@@ -1,0 +1,30 @@
+.card-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  
+
+
+/* iOS specific styles */
+/* @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .ios-button {
+      padding: 10px 20px;
+      font-size: 14px; 
+    }
+  } */
+    
+
+  .imgStyle {
+    max-width: 100%; /* Prevents the image from exceeding the container's width */
+    height: auto; /* Maintains aspect ratio */
+  }
+
+  /* Optional: Target WebKit browsers if needed */
+  @supports (-webkit-appearance: none) {
+    .imgStyle {
+      /* Additional styling for WebKit browsers */
+    }
+  }
